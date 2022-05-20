@@ -1,18 +1,16 @@
-<!DOCTYPE html>
+<!DOCTYPE>
 <html>
 <head>
-    <meta charset="UTF-8"/>
-    <title>Лабораторная работа №3</title>
+    <script type = "text/javascript" src = "scripts/lab3.js"></script>
+    <title>Лабораторная работа 3</title>
 </head>
 <body>
-<form onsubmit="check(); return false;">
-    <h1> Лабораторная работа №3 </h1>
-    <h2>Ввод матрицы:</h2>
-    <p><textarea cols="18" rows="4" id="matrix"></textarea></p><br>
-    <input type = "submit" value = "Результат">
-</form>
-<br>Результат: <span id="Result"></span>
-<script src="/scripts/lab3.js"></script>
+<h1>Лабораторная работа №3</h1><br>
+Первое множество: <label for="set1"></label><input type = "text" id = "set1" placeholder = "1 5 3 2"><br><br>
+Второе множество: <label for="set2"></label><input type = "text" id = "set2" placeholder = "6 5 4 3"><br><br>
+Отношение : <label for="relation"></label><input type = "text" id = "relation" placeholder = "1 5, 3 6"><br><br>
+<button type = "button" onclick = "calculate()">Проверить</button>
+<p id = "output"></p>
+
 </body>
 </html>
-
